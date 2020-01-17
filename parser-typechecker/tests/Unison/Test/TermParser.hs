@@ -89,6 +89,11 @@ test1 = scope "termparser" . tests . map parses $
     "  x = 1\n" ++
     "  x"
   , "handle foo with x"
+    -- check that handle .. in still works
+  , "handle foo in x"
+  , "handle foo in x \n" ++
+    " x = 1\n" ++
+    " x"
 
   -- Patterns
   , "case x of x -> x"
