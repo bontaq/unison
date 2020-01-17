@@ -1,0 +1,8 @@
+testA x = case x of
+  {a} -> a
+
+a = handle testA in
+  x = 1
+  x
+
+> a
